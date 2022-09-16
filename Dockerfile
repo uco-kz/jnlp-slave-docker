@@ -1,4 +1,4 @@
-FROM jenkins/jnlp-slave:latest
+FROM jenkins/jnlp-slave
 
 USER root
 RUN apk add docker
