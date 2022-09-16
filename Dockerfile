@@ -1,8 +1,2 @@
-FROM jenkins/jnlp-slave:3.27-1-alpine
-
-USER root
-RUN apk add docker
-
-USER jenkins
-
-ENTRYPOINT ["jenkins-slave"]
+FROM httpd:2.4
+COPY ./index.html /usr/local/apache2/htdocs/
